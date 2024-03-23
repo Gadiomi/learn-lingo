@@ -1,4 +1,4 @@
-import{n,L as d,j as i,s as o}from"./index-5e6b954b.js";const x=n.div`
+import{n,L as d,j as i,s as o}from"./index-38a99f13.js";const x=n.div`
   margin-left: auto;
   margin-right: auto;
   padding: 0px 16px;
