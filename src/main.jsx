@@ -10,7 +10,7 @@ import './Firebase.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/Learn-Lingo">
+    <BrowserRouter basename="/learn-lingo">
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <App />
