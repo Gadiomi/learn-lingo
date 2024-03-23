@@ -1,0 +1,79 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --background: #fff;
+  --secondary: #121417;
+  --blue: #3470ff;
+  --blue-secondary: #0b44cd;
+  --secondary-transperent: rgba(18, 20, 23, 0.5);
+  --drop-down: rgba(18, 20, 23, 0.2);
+  --modal: #363535;
+  --gray: #f7f7fb;
+  --gray-secondary: #8a8a89;
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Manrope-Regular.ttf') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/Manrope-Medium.ttf') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts//Manrope-SemiBold.ttf') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts//Manrope-Bold.ttf') format('woff2');
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--background);
+  font-weight: 400;
+  font-style: normal;
+  color: var(--secondary);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+}
+button {
+  display: block;
+  cursor: pointer;
+  margin: 0;
+}
