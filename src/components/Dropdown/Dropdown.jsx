@@ -7,8 +7,8 @@ import {
   DropdownItem,
   SvgDown,
   DropdownText,
-} from './Dropdown.styled';
-import sprite from '../../images/sprite.svg';
+} from './Dropdown.stuled';
+import sprite from '../../assets/sprite.svg';
 
 function Dropdown({ arr, value, set, height, selectedOption }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +42,7 @@ function Dropdown({ arr, value, set, height, selectedOption }) {
       <Dropdownheader onClick={toggleDropdown} ref={dropdownRef}>
         <DropdownText>{selectedOption || value}</DropdownText>
         <SvgDown $active={isOpen ? true : undefined}>
-          <use href={sprite + '#icon-Vector'}></use>
+          <use href={sprite + '#icon-chevron-down'}></use>
         </SvgDown>
       </Dropdownheader>
       {isOpen && (

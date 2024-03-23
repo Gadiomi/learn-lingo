@@ -1,22 +1,42 @@
 import {
   HeaderContainer,
-  HeaderNavigation,
-  HeaderLink,
-  HeaderLogo,
+  LogoSvg,
+  LogoText,
+  LogoConteiner,
+  Headera,
+  HeaderContainer2,
 } from './Header.styled';
-import logo from '../../images/new-logo.png';
+import AuthNav from '../AuthNav/AuthNav';
+import sprite from '../../assets/sprite.svg';
+import UserMenu from '../UserMenu/UserMenu';
+import { selectIsAuth } from '../../redux/Auth/selectors';
+import { useSelector } from 'react-redux';
+import NavBar from '../Menu/NavBar';
 
-export const Header = () => {
+export const Header = ({ color }) => {
+  const isLoggedIn = useSelector(selectIsAuth);
+
   return (
-    <HeaderContainer>
-      <HeaderLogo>
-        <img src={logo} alt="logo images" width={100} height={100} />
-      </HeaderLogo>
-      <HeaderNavigation>
-        <HeaderLink to="/">Home</HeaderLink>
-        <HeaderLink to="/catalog">Catalog</HeaderLink>
-        <HeaderLink to="/favorites">Favorite</HeaderLink>
-      </HeaderNavigation>
-    </HeaderContainer>
+    <Headera>
+      <HeaderContainer>
+        <LogoConteiner to="/Home">
+          <LogoSvg>
+            <use href={sprite + '#icon-ukraine'}></use>
+          </LogoSvg>
+          <LogoText>LearnLingo</LogoText>
+        </LogoConteiner>
+        {isLoggedIn ? <UserMenu color={color} /> : <AuthNav color={color} />}
+      </HeaderContainer>
+
+      <HeaderContainer2>
+        <LogoConteiner to="/Home">
+          <LogoSvg>
+            <use href={sprite + '#icon-ukraine'}></use>
+          </LogoSvg>
+          <LogoText>LearnLingo</LogoText>
+        </LogoConteiner>
+        <NavBar color={color} />
+      </HeaderContainer2>
+    </Headera>
   );
 };
