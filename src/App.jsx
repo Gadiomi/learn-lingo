@@ -41,7 +41,7 @@ function App() {
   return (
     <AppWrapper>
       <Routes>
-        <Route path="/" element={<SharedLayout color={color} />}>
+        <Route path="" element={<SharedLayout color={color} />}>
           <Route index element={<Navigate to="Home" />} />
           <Route path="/Home" element={<HomePage color={color} />} />
           <Route path="/Teachers" element={<TeachersPage color={color} />} />
