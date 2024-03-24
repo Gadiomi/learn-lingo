@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 
 import { selecFavorites, carsFilterFavorites } from '../../redux/cars/selector';
 import CardItem from '../CardItem/CardItem';
-import { FavoritList, Text } from './Favorite.styled';
+import { FavoritList, FavoritText } from './Favorite.styled';
 import CardFilter from '../CardFilter/CardFilter';
 
 function Favorite() {
@@ -27,11 +27,11 @@ function Favorite() {
       ) : (
         <>
           {favoritesArr.length === 0 ? (
-            <Text>
+            <FavoritText>
               It appears that you have not added any car to your favorites yet.
               To get started, you can add car that you like to your favorites
               for easier access in the future.
-            </Text>
+            </FavoritText>
           ) : (
             <>
               <CardFilter filterArr={favoritesArr} />

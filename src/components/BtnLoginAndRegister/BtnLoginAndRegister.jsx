@@ -1,8 +1,8 @@
 import {
-  AuthNavConteiner,
+  NavigationConteiner,
   LinkLogin,
-  LoginLogo,
-  LinkRegister,
+  Logo,
+  BtnRegister,
 } from './BtnLoginAndRegister.styled';
 import { useState } from 'react';
 import Modal from '../Modal/Modal';
@@ -39,17 +39,17 @@ function BtnLoginAndRegister({ color, regis, log, ShowModal, setNavstate }) {
 
   return (
     <>
-      <AuthNavConteiner>
+      <NavigationConteiner>
         <LinkLogin onClick={hendleClickLogin} color={color}>
-          <LoginLogo color={color}>
+          <Logo color={color}>
             <use href={sprite + '#icon-log-in-01'}></use>
-          </LoginLogo>
+          </Logo>
           Log in
         </LinkLogin>
-        <LinkRegister onClick={hendleClickRegister} color={color}>
+        <BtnRegister onClick={hendleClickRegister} color={color}>
           Registration
-        </LinkRegister>
-      </AuthNavConteiner>
+        </BtnRegister>
+      </NavigationConteiner>
       {onClose && (
         <Modal state={onClose} onClose={setOnClose}>
           <Register color={color} onClose={setOnClose} />

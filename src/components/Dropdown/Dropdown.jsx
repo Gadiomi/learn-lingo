@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 
 import {
-  Customdropdown,
-  Dropdownheader,
-  Dropdownlist,
+  CustomDropdown,
+  DropdownHeader,
+  DropdownList,
   DropdownItem,
   SvgDown,
   DropdownText,
@@ -38,23 +38,23 @@ function Dropdown({ arr, value, set, height, selectedOption }) {
   }, [dropdownRef]);
 
   return (
-    <Customdropdown>
-      <Dropdownheader onClick={toggleDropdown} ref={dropdownRef}>
+    <CustomDropdown>
+      <DropdownHeader onClick={toggleDropdown} ref={dropdownRef}>
         <DropdownText>{selectedOption || value}</DropdownText>
         <SvgDown $active={isOpen ? true : undefined}>
           <use href={sprite + '#icon-chevron-down'}></use>
         </SvgDown>
-      </Dropdownheader>
+      </DropdownHeader>
       {isOpen && (
-        <Dropdownlist $heigh={height ? height : undefined}>
+        <DropdownList $heigh={height ? height : undefined}>
           {arr.map((arr, index) => (
             <DropdownItem key={index} onClick={() => handleOptionClick(arr)}>
               {arr}
             </DropdownItem>
           ))}
-        </Dropdownlist>
+        </DropdownList>
       )}
-    </Customdropdown>
+    </CustomDropdown>
   );
 }
 

@@ -1,66 +1,110 @@
 [UK](README-uk.md)
+
 # LearnLingo
 
-![Home page](./public//Знімок%20екрана%202024-01-28%20о%2011.16.34.png)
+![Home page](./public/learn-ligo.png)
 
-**LearnLingo**  - is a company application that provides online language learning services. The main goal of the program is to help users find and select the right teacher for their educational needs.
+**LearnLingo** - a digital product from a company specializing in language
+learning through the Internet. The main task of this program is to help users in
+finding and choosing the right teacher for their educational needs.
 
 ## Overview
 
-The structure of the program consists of three pages:
+The site structure consists of three pages:
 
-Home page: On this page, users can familiarize themselves with the benefits of the company and go to the main page of the program.
+Home Page: Here visitors can find a brief overview of the benefits company and
+go to the main page of the program.
 
-Teachers Page: On this page, users can view a list of teachers available for training. Users can filter teachers by the language of instruction, the level of knowledge of students and the price of an hour of a lesson. By default, only 4 teacher flashcards are displayed on the page, but users can download more flashcards by clicking the "Download More" button. Users can also add teachers to "favorites" by clicking on the button with the "hearts" icon. If the user is not authorized, they will be shown a warning that this feature is not available to authorized users.
+Teachers: On this page, guests can view a large list of available teachers
+teachers They can use filters by language of instruction, level students and the
+cost of an hour of classes. Initially, the page only displays teacher cards are
+limited, but guests can download additional cards by clicking the "Show more"
+button. Also they can add teachers to "favorite" by pressing the button with a
+"heart" sign. If the visitor is not authorized, he will be shown a message that
+this feature is available to authorized users only.
 
-Private Favorites page: This page is only available to authorized users. On it, they can view all the teachers they have added to their "favorites". The page is designed similarly to the "Teachers" page.
+Private Favorites Page: Only authorized users can see this page users Here they
+can view all the teachers they have added to the "chosen one". The design of the
+page is similar to the "Teachers" page.
 
 ## Contents
-- [Review](#review)
-- [Content](#content)
-- [Technologies](#technologies)
-- [Function](#functional)
-- [Installation](#installation)
-- [Useful links](#useful-links)
+
+- [LearnLingo](#learnlingo)
+  - [Overview](#overview)
+  - [Contents](#contents)
+  - [Technologies](#technologies)
+  - [Functional](#functional)
+    - [Authorization:](#authorization)
+    - [Forms:](#forms)
+    - [Database:](#database)
+    - [Modal windows:](#modal-windows)
+    - [Functionality of the selected:](#functionality-of-the-selected)
+    - ["Read more" functionality:](#read-more-functionality)
+    - [Routing:](#routing)
+  - [Installation](#installation)
+  - [Useful links](#useful-links)
 
 ## Technologies
 
-- ***General***
-  - ![VSCode](https://img.shields.io/badge/vscode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+- **_General_**
+
+  - ![VSCode](https://img.shields.io/badge/vscode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+    ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+    ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
   - ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
-- ***Front-end***
-  - ![HTML5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- **_Front-end_**
+
+  - ![HTML5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+    ![CSS3](https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
   - ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
   - ![React](https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white)
   - ![Redux](https://img.shields.io/badge/redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
   - ![Styled Components](https://img.shields.io/badge/styled_components-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white)
 
-- ***Back-end***
-![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+- **_Back-end_**
+  ![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
 
 ## Functional
 
 #### Authorization:
-Application using Firebase for registration, login, current user data and logout.
+
+The app will use Firebase to register, sign in, manage current user data, and
+log out.
 
 #### Forms:
-Forms for registration, login and booking a trial class, all fields are mandatory and must be filled.
+
+There must be forms for registration, login and booking a trial class filled in
+all required fields.
 
 #### Database:
-Firebase Realtime Database is used to store information about teachers. Information about instructors includes their first name, last name, languages, skill level, rating, reviews, hourly rate, number of applications, avatar URL, class information, terms and experience.
+
+Firebase Realtime Database will be used to store information about teachers
+Information about instructors will include their first name, last name,
+languages, qualification level, rating, reviews, price per hour, number of
+classes, Avatar URL, class information, terms and experience.
 
 #### Modal windows:
-Windows for registration, login, reservation and warning about unauthorized access are implemented in the form of fashionable windows. They are closed when you click on the "cross", on the next background or when you press the Esc key.
+
+Modal windows for registration, login, booking and alerts about unauthorized
+access will be implemented. They can be closed by clicking on the cross icon, on
+a darkened background, or the Esc key.
 
 #### Functionality of the selected:
-Authorized users can independently add and remove teachers to/from their "favorites". The heart button changes color when a teacher is added or removed. Information about the selected teacher will be saved even if the user refreshes the page.
+
+Authorized users will be able to add and remove teachers from their favorites.
+The heart icon button will change color when added or removed the teacher The
+information about the selected teacher will be saved, even after the update
+pages
 
 #### "Read more" functionality:
-Users open additional information about a teacher and view their students using the Read More button.
+
+Users will be able to view additional information about the teacher and his
+feedback students by clicking the "Read more" button.
 
 #### Routing:
-The React Router library will be used to navigate between pages.
+
+The React Router library will be used to navigate between pages
 
 ## Installation
 
@@ -71,8 +115,6 @@ The React Router library will be used to navigate between pages.
 5. Commit your changes: git commit -m "Add new feature"
 6. Push to branch: git push origin function
 7. Create a pickup request.
-
-
 
 ## Useful links
 

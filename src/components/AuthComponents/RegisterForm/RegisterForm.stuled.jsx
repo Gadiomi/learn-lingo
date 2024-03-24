@@ -15,14 +15,14 @@ export const RegisterForm = styled.form`
   }
 `;
 
-export const InputValidation = styled.div`
+export const RegisterInputValidation = styled.div`
   margin-bottom: 14px;
   position: relative;
   @media (min-width: 768px) {
     margin-bottom: 18px;
   }
 `;
-export const ConfirmValidation = styled.div`
+export const RegisterConfirmValidation = styled.div`
   margin-bottom: 40px;
   position: relative;
   @media (min-width: 768px) {
@@ -30,7 +30,7 @@ export const ConfirmValidation = styled.div`
   }
 `;
 
-export const Title = styled.h2`
+export const RegisterTitle = styled.h2`
   line-height: 1.2;
   letter-spacing: -0.8px;
   font-weight: 500;
@@ -40,7 +40,7 @@ export const Title = styled.h2`
     font-size: 40px;
   }
 `;
-export const Text = styled.p`
+export const RegisterText = styled.p`
   font-size: 16px;
   font-weight: 400;
   line-height: 1.38;
@@ -51,26 +51,21 @@ export const Text = styled.p`
   }
 `;
 
-export const Validation = styled.p`
+export const RegisterValidation = styled.p`
   margin-left: 15px;
   font-size: 12px;
   font-weight: 400;
   color: var(--red);
 `;
-export const ShowPassword = styled.button`
+export const RegisterShowPassword = styled.button`
   position: absolute;
   right: 18px;
   top: 17px;
   background-color: transparent;
   border: none;
   padding: 0px;
-
-  /* @media (min-width: 768px) {
-    top: 10px;
-    left: 90%;
-  } */
 `;
-export const Input = styled.input`
+export const RegisterInput = styled.input`
   padding: 16px 18px;
   width: 100%;
   border-radius: 40px;
@@ -89,7 +84,7 @@ export const Input = styled.input`
   }
 `;
 
-export const Button = styled.button`
+export const RegisterButton = styled.button`
   font-weight: 600;
   width: 100%;
   border: none;
@@ -118,7 +113,7 @@ export const Button = styled.button`
     padding: 16px 18px;
   }
 `;
-export const ButtonCloseModal = styled.button`
+export const RegisterButtonCloseModal = styled.button`
   position: absolute;
   top: 20px;
   right: 20px;
@@ -127,20 +122,20 @@ export const ButtonCloseModal = styled.button`
   border: none;
 `;
 
-export const Svg = styled.svg`
+export const RegisterSvg = styled.svg`
   stroke: var(--secondary);
   fill: none;
   width: 24px;
   height: 24px;
 `;
-export const SvgX = styled.svg`
+export const RegisterSvgX = styled.svg`
   stroke: var(--secondary);
   fill: none;
   width: 32px;
   height: 32px;
 `;
 
-export const SvgEye = styled.svg`
+export const RegisterSvgEye = styled.svg`
   stroke: var(--secondary);
   fill: none;
   display: inline-block;

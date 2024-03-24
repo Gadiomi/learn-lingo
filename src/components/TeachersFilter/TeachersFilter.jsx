@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import Dropdown from '../Dropdown/Dropdown';
-import { ListFilter, ResetBtn } from './TeachersFilter.stuled';
+import {
+  TeacherListFilter,
+  TeacherResetFilterBtn,
+} from './TeachersFilter.stuled';
 import { useDispatch, useSelector } from 'react-redux';
 
 import {
@@ -67,7 +70,7 @@ function TeachersFilter({ color, Level, setLevel, Teachers }) {
   };
 
   return (
-    <ListFilter>
+    <TeacherListFilter>
       <li>
         <span>Languages</span>
         <Dropdown
@@ -96,10 +99,10 @@ function TeachersFilter({ color, Level, setLevel, Teachers }) {
           selectedOption={price}
         />
       </li>
-      <ResetBtn color={color} onClick={hendeleReset}>
+      <TeacherResetFilterBtn color={color} onClick={hendeleReset}>
         Reset filter
-      </ResetBtn>
-    </ListFilter>
+      </TeacherResetFilterBtn>
+    </TeacherListFilter>
   );
 }
 

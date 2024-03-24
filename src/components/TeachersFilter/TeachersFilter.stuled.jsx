@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ListFilter = styled.ul`
+export const TeacherListFilter = styled.ul`
   display: flex;
   align-items: flex-end;
   gap: 18px;
@@ -21,7 +21,7 @@ export const ListFilter = styled.ul`
   }
 `;
 
-export const ResetBtn = styled.button`
+export const TeacherResetFilterBtn = styled.button`
   background-color: ${({ color }) =>
     color === 'Blue'
       ? 'var(--colorBlue)'

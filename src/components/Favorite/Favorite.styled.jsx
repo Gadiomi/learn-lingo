@@ -9,7 +9,7 @@ export const FavoritList = styled.ul`
   margin-top: 50px;
 `;
 
-export const Text = styled.p`
+export const FavoritText = styled.p`
   font-size: 18px;
   line-height: 1.5;
   padding-top: 50px;

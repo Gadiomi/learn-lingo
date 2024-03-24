@@ -1,9 +1,9 @@
 import {
   HeaderContainer,
-  LogoSvg,
-  LogoText,
-  LogoConteiner,
-  Headera,
+  HeaderLogoSvg,
+  HeaderLogoText,
+  HeaderLogoConteiner,
+  MainHeader,
   HeaderContainer2,
 } from './Header.styled';
 import AuthNav from '../AuthNav/AuthNav';
@@ -17,26 +17,26 @@ export const Header = ({ color }) => {
   const isLoggedIn = useSelector(selectIsAuth);
 
   return (
-    <Headera>
+    <MainHeader>
       <HeaderContainer>
-        <LogoConteiner to="/Home">
-          <LogoSvg>
+        <HeaderLogoConteiner to="/Home">
+          <HeaderLogoSvg>
             <use href={sprite + '#icon-ukraine'}></use>
-          </LogoSvg>
-          <LogoText>LearnLingo</LogoText>
-        </LogoConteiner>
+          </HeaderLogoSvg>
+          <HeaderLogoText>LearnLingo</HeaderLogoText>
+        </HeaderLogoConteiner>
         {isLoggedIn ? <UserMenu color={color} /> : <AuthNav color={color} />}
       </HeaderContainer>
 
       <HeaderContainer2>
-        <LogoConteiner to="/Home">
-          <LogoSvg>
+        <HeaderLogoConteiner to="/Home">
+          <HeaderLogoSvg>
             <use href={sprite + '#icon-ukraine'}></use>
-          </LogoSvg>
-          <LogoText>LearnLingo</LogoText>
-        </LogoConteiner>
+          </HeaderLogoSvg>
+          <HeaderLogoText>LearnLingo</HeaderLogoText>
+        </HeaderLogoConteiner>
         <NavBar color={color} />
       </HeaderContainer2>
-    </Headera>
+    </MainHeader>
   );
 };

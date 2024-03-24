@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const Navigation = styled.nav`
+export const UseNavigation = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@ export const Navigation = styled.nav`
   }
 `;
 
-export const StyledLink = styled(Link)`
+export const UseLink = styled(Link)`
   color: var(--secondary);
   font-size: 16px;
   font-style: normal;
@@ -38,8 +38,9 @@ export const StyledLink = styled(Link)`
         : 'var(--cecondary-text-color)'};
   }
 
-  color: ${({ activ ,color}) =>  activ === 'active'  ? 
-      color === 'Blue'
+  color: ${({ activ, color }) =>
+    activ === 'active'
+      ? color === 'Blue'
         ? 'var(--colorBlue)'
         : color === 'Green'
         ? 'var(--colorGreen)'
@@ -49,8 +50,8 @@ export const StyledLink = styled(Link)`
         ? 'var(--colorPink)'
         : color === 'LightPink'
         ? 'var(--colorCoral)'
-        : 'var(--cecondary-text-color)' : '' }
-
+        : 'var(--cecondary-text-color)'
+      : ''};
 `;
 
 export const LogOutBtn = styled.button`

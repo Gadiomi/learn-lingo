@@ -2,16 +2,16 @@ import * as Yup from 'yup';
 
 import {
   RegisterForm,
-  Input,
-  Button,
-  Title,
-  Text,
-  Validation,
-  InputValidation,
-  ShowPassword,
-  SvgEye,
-  SvgX,
-  ButtonCloseModal,
+  RegisterInput,
+  RegisterButton,
+  RegisterTitle,
+  RegisterText,
+  RegisterValidation,
+  RegisterInputValidation,
+  RegisterShowPassword,
+  RegisterSvgEye,
+  RegisterSvgX,
+  RegisterButtonCloseModal,
 } from './RegisterForm.stuled';
 import { useFormik } from 'formik';
 import sprite from '../../../assets/sprite.svg';
@@ -65,14 +65,14 @@ function Register({ onClose, color }) {
   {
     return (
       <RegisterForm onSubmit={formik.handleSubmit}>
-        <Title>Registration</Title>
-        <Text>
+        <RegisterTitle>Registration</RegisterTitle>
+        <RegisterText>
           Thank you for your interest in our platform! In order to register, we
           need some information. Please provide us with the following
           information
-        </Text>
-        <InputValidation>
-          <Input
+        </RegisterText>
+        <RegisterInputValidation>
+          <RegisterInput
             id="userName"
             name="userName"
             type="text"
@@ -87,12 +87,12 @@ function Register({ onClose, color }) {
           />
           {formik.touched.userName && formik.errors.userName ? (
             <>
-              <Validation>{formik.errors.userName}</Validation>
+              <RegisterValidation>{formik.errors.userName}</RegisterValidation>
             </>
           ) : null}
-        </InputValidation>
-        <InputValidation>
-          <Input
+        </RegisterInputValidation>
+        <RegisterInputValidation>
+          <RegisterInput
             id="email"
             name="email"
             type="text"
@@ -107,12 +107,12 @@ function Register({ onClose, color }) {
 
           {formik.touched.email && formik.errors.email ? (
             <>
-              <Validation>{formik.errors.email}</Validation>
+              <RegisterValidation>{formik.errors.email}</RegisterValidation>
             </>
           ) : null}
-        </InputValidation>
-        <InputValidation>
-          <Input
+        </RegisterInputValidation>
+        <RegisterInputValidation>
+          <RegisterInput
             id="password"
             name="password"
             type={formik.values.showPassword ? 'text' : 'password'}
@@ -125,7 +125,7 @@ function Register({ onClose, color }) {
                 : ''
             }`}
           />
-          <ShowPassword
+          <RegisterShowPassword
             type="button"
             onClick={() => {
               formik.setFieldTouched('password', false);
@@ -133,29 +133,29 @@ function Register({ onClose, color }) {
             }}
           >
             {formik.values.showPassword ? (
-              <SvgEye>
+              <RegisterSvgEye>
                 <use href={sprite + '#iconEyeOpen'}></use>
-              </SvgEye>
+              </RegisterSvgEye>
             ) : (
-              <SvgEye>
+              <RegisterSvgEye>
                 <use href={sprite + '#iconEyeClosed'}></use>
-              </SvgEye>
+              </RegisterSvgEye>
             )}
-          </ShowPassword>
+          </RegisterShowPassword>
           {formik.touched.password && formik.errors.password ? (
-            <Validation>{formik.errors.password}</Validation>
+            <RegisterValidation>{formik.errors.password}</RegisterValidation>
           ) : null}
-        </InputValidation>
+        </RegisterInputValidation>
 
-        <Button color={color} type="submit">
+        <RegisterButton color={color} type="submit">
           Sign Up
-        </Button>
+        </RegisterButton>
 
-        <ButtonCloseModal onClick={hendelClikClosed}>
-          <SvgX>
+        <RegisterButtonCloseModal onClick={hendelClikClosed}>
+          <RegisterSvgX>
             <use href={sprite + '#icon-x'}></use>
-          </SvgX>
-        </ButtonCloseModal>
+          </RegisterSvgX>
+        </RegisterButtonCloseModal>
       </RegisterForm>
     );
   }

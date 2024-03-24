@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
-export const Customdropdown = styled.div`
+export const CustomDropdown = styled.div`
   position: relative;
   display: inline-block;
   border-radius: 14px;
   background-color: #fff;
 `;
 
-export const Dropdownheader = styled.div`
+export const DropdownHeader = styled.div`
   display: flex;
   align-items: center;
   gap: 0px 50px;
@@ -15,6 +15,7 @@ export const Dropdownheader = styled.div`
   cursor: pointer;
   border-radius: 14px;
 `;
+
 export const DropdownText = styled.p`
   color: var(--secondary);
   font-size: 18px;
@@ -24,7 +25,7 @@ export const DropdownText = styled.p`
   margin: 0px;
 `;
 
-export const Dropdownlist = styled.ul`
+export const DropdownList = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -46,6 +47,7 @@ export const Dropdownlist = styled.ul`
   background: var(--background);
   box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.02);
 `;
+
 export const DropdownItem = styled.li`
   cursor: pointer;
   transition: color 300ms;
@@ -56,6 +58,7 @@ export const DropdownItem = styled.li`
     color: var(--secondary);
   }
 `;
+
 export const SvgDown = styled.svg`
   width: 20px;
   height: 20px;

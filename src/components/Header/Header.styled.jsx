@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const Headera = styled.header`
+export const MainHeader = styled.header`
   padding: 20px 0px;
 `;
 
@@ -42,22 +42,22 @@ export const HeaderContainer2 = styled.div`
   }
 `;
 
-export const LogoSvg = styled.svg`
+export const HeaderLogoSvg = styled.svg`
   width: 28px;
   height: 28px;
 `;
 
-export const LogoConteiner = styled(Link)`
+export const HeaderLogoConteiner = styled(Link)`
   display: flex;
   gap: 0px 8px;
   align-items: center;
 `;
-export const LogoText = styled.span`
+export const HeaderLogoText = styled.span`
   color: #121417;
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 120% */
+  line-height: 24px;
   letter-spacing: -0.4px;
 `;

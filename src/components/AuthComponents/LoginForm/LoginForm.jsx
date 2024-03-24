@@ -1,17 +1,17 @@
 import * as Yup from 'yup';
-
+Login;
 import {
-  RegisterForm,
-  Input,
-  Button,
-  Title,
-  Text,
-  Validation,
-  InputValidation,
-  ShowPassword,
-  SvgEye,
-  SvgX,
-  ButtonCloseModal,
+  LoginRegisterForm,
+  LoginInput,
+  LoginButton,
+  LoginTitle,
+  LoginText,
+  LoginValidation,
+  LoginInputValidation,
+  LoginShowPassword,
+  LoginSvgEye,
+  LoginSvgX,
+  LoginButtonCloseModal,
 } from './LoginForm.stuled';
 import { useFormik } from 'formik';
 import sprite from '../../../assets/sprite.svg';
@@ -56,14 +56,14 @@ function Login({ onClose, color }) {
   });
   {
     return (
-      <RegisterForm onSubmit={formik.handleSubmit}>
-        <Title>Log In</Title>
-        <Text>
+      <LoginRegisterForm onSubmit={formik.handleSubmit}>
+        <LoginTitle>Log In</LoginTitle>
+        <LoginText>
           Welcome back! Please enter your credentials to access your account and
           continue your search for an teacher.
-        </Text>
-        <InputValidation>
-          <Input
+        </LoginText>
+        <LoginInputValidation>
+          <LoginInput
             id="email"
             name="email"
             type="text"
@@ -77,12 +77,12 @@ function Login({ onClose, color }) {
 
           {formik.touched.email && formik.errors.email ? (
             <>
-              <Validation>{formik.errors.email}</Validation>
+              <LoginValidation>{formik.errors.email}</LoginValidation>
             </>
           ) : null}
-        </InputValidation>
-        <InputValidation>
-          <Input
+        </LoginInputValidation>
+        <LoginInputValidation>
+          <LoginInput
             id="password"
             name="password"
             type={formik.values.showPassword ? 'text' : 'password'}
@@ -95,7 +95,7 @@ function Login({ onClose, color }) {
                 : ''
             }`}
           />
-          <ShowPassword
+          <LoginShowPassword
             type="button"
             onClick={() => {
               formik.setFieldTouched('password', false);
@@ -103,30 +103,30 @@ function Login({ onClose, color }) {
             }}
           >
             {formik.values.showPassword ? (
-              <SvgEye>
+              <LoginSvgEye>
                 <use href={sprite + '#iconEyeOpen'}></use>
-              </SvgEye>
+              </LoginSvgEye>
             ) : (
-              <SvgEye>
+              <LoginSvgEye>
                 <use href={sprite + '#iconEyeClosed'}></use>
-              </SvgEye>
+              </LoginSvgEye>
             )}
-          </ShowPassword>
+          </LoginShowPassword>
           {formik.touched.password && formik.errors.password ? (
-            <Validation>{formik.errors.password}</Validation>
+            <LoginValidation>{formik.errors.password}</LoginValidation>
           ) : null}
-        </InputValidation>
+        </LoginInputValidation>
 
-        <Button color={color} type="submit">
+        <LoginButton color={color} type="submit">
           Log In
-        </Button>
+        </LoginButton>
 
-        <ButtonCloseModal onClick={hendelClikClosed}>
-          <SvgX>
+        <LoginButtonCloseModal onClick={hendelClikClosed}>
+          <LoginSvgX>
             <use href={sprite + '#icon-x'}></use>
-          </SvgX>
-        </ButtonCloseModal>
-      </RegisterForm>
+          </LoginSvgX>
+        </LoginButtonCloseModal>
+      </LoginRegisterForm>
     );
   }
 }

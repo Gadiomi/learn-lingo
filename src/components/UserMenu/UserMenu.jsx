@@ -1,14 +1,14 @@
-import { Navigation, StyledLink, LogOutBtn } from './UserMenu.stuled';
-import { LoginLogo } from '../BtnLoginAndRegister/BtnLoginAndRegister.styled';
+import { UseNavigation, UseLink, LogOutBtn } from './UserMenu.stuled';
+import { Logo } from '../BtnLoginAndRegister/BtnLoginAndRegister.styled';
 import { logOut } from '../../redux/Auth/AuthOperations';
 import { useDispatch } from 'react-redux';
-import { useLocation  } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 import sprite from '../../assets/sprite.svg';
 
 function AuthNav({ color, setNavstate }) {
   const dispatch = useDispatch();
-    const location = useLocation();
+  const location = useLocation();
   const hendeleLogout = () => {
     if (setNavstate) {
       dispatch(logOut());
@@ -19,52 +19,61 @@ function AuthNav({ color, setNavstate }) {
   return (
     <>
       {setNavstate ? (
-        <Navigation>
-          <StyledLink
-      activ={location.pathname === "/Home"  ? 'active' : ''} 
+        <UseNavigation>
+          <UseLink
+            activ={location.pathname === '/Home' ? 'active' : ''}
             color={color}
             to="/Home"
             onClick={() => setNavstate('closed')}
           >
             Home
-          </StyledLink>
-          <StyledLink
-            activ={location.pathname === "/Teachers"  ? 'active' : ''}
+          </UseLink>
+          <UseLink
+            activ={location.pathname === '/Teachers' ? 'active' : ''}
             color={color}
             to="/Teachers"
             onClick={() => setNavstate('closed')}
           >
             Teachers
-          </StyledLink>
-          <StyledLink
-                 activ={location.pathname === "/Favorites" ? 'active' : ''}
+          </UseLink>
+          <UseLink
+            activ={location.pathname === '/Favorites' ? 'active' : ''}
             color={color}
             to="/Favorites"
             onClick={() => setNavstate('closed')}
           >
             Favorites
-          </StyledLink>
-        </Navigation>
+          </UseLink>
+        </UseNavigation>
       ) : (
-        <Navigation>
-            <StyledLink
-                        activ={location.pathname === "/Home"  ? 'active' : ''}    color={color} to="/Home">
+        <UseNavigation>
+          <UseLink
+            activ={location.pathname === '/Home' ? 'active' : ''}
+            color={color}
+            to="/Home"
+          >
             Home
-          </StyledLink>
-            <StyledLink activ={location.pathname === "/Teachers" ? 'active' : ''}
-              color={color} to="/Teachers">
+          </UseLink>
+          <UseLink
+            activ={location.pathname === '/Teachers' ? 'active' : ''}
+            color={color}
+            to="/Teachers"
+          >
             Teachers
-          </StyledLink>
-            <StyledLink
-              activ={location.pathname === "/Favorites" ? 'active' : ''} color={color} to="/Favorites">
+          </UseLink>
+          <UseLink
+            activ={location.pathname === '/Favorites' ? 'active' : ''}
+            color={color}
+            to="/Favorites"
+          >
             Favorites
-          </StyledLink>{' '}
-        </Navigation>
+          </UseLink>{' '}
+        </UseNavigation>
       )}
       <LogOutBtn onClick={hendeleLogout} color={color}>
-        <LoginLogo color={color}>
+        <Logo color={color}>
           <use href={sprite + '#icon-log-in-01'}></use>
-        </LoginLogo>
+        </Logo>
         Log out
       </LogOutBtn>
     </>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import '../../../index.css';
 
-export const RegisterForm = styled.form`
+export const LoginRegisterForm = styled.form`
   position: relative;
   margin: 0 auto;
   min-height: 420px;
@@ -15,14 +15,14 @@ export const RegisterForm = styled.form`
   }
 `;
 
-export const InputValidation = styled.div`
+export const LoginInputValidation = styled.div`
   margin-bottom: 14px;
   position: relative;
   @media (min-width: 768px) {
     margin-bottom: 18px;
   }
 `;
-export const ConfirmValidation = styled.div`
+export const LoginConfirmValidation = styled.div`
   margin-bottom: 40px;
   position: relative;
   @media (min-width: 768px) {
@@ -30,7 +30,7 @@ export const ConfirmValidation = styled.div`
   }
 `;
 
-export const Title = styled.h2`
+export const LoginTitle = styled.h2`
   line-height: 1.2;
   letter-spacing: -0.8px;
   font-weight: 500;
@@ -40,7 +40,7 @@ export const Title = styled.h2`
     font-size: 40px;
   }
 `;
-export const Text = styled.p`
+export const LoginText = styled.p`
   @media (min-width: 768px) {
     width: 438px;
   }
@@ -52,13 +52,13 @@ export const Text = styled.p`
   color: rgba(18, 20, 23, 0.8);
 `;
 
-export const Validation = styled.p`
+export const LoginValidation = styled.p`
   margin-left: 15px;
   font-size: 12px;
   font-weight: 400;
   color: var(--red);
 `;
-export const ShowPassword = styled.button`
+export const LoginShowPassword = styled.button`
   position: absolute;
   right: 18px;
   top: 17px;
@@ -66,7 +66,7 @@ export const ShowPassword = styled.button`
   border: none;
   padding: 0px;
 `;
-export const Input = styled.input`
+export const LoginInput = styled.input`
   padding: 16px 18px;
   width: 100%;
   border-radius: 40px;
@@ -85,7 +85,7 @@ export const Input = styled.input`
   }
 `;
 
-export const Button = styled.button`
+export const LoginButton = styled.button`
   font-weight: 600;
   width: 100%;
   border: none;
@@ -113,7 +113,7 @@ export const Button = styled.button`
     padding: 16px 180px;
   }
 `;
-export const ButtonCloseModal = styled.button`
+export const LoginButtonCloseModal = styled.button`
   position: absolute;
   top: 20px;
   right: 20px;
@@ -122,20 +122,20 @@ export const ButtonCloseModal = styled.button`
   border: none;
 `;
 
-export const Svg = styled.svg`
+export const LoginSvg = styled.svg`
   stroke: var(--secondary);
   fill: none;
   width: 24px;
   height: 24px;
 `;
-export const SvgX = styled.svg`
+export const LoginSvgX = styled.svg`
   stroke: var(--secondary);
   fill: none;
   width: 32px;
   height: 32px;
 `;
 
-export const SvgEye = styled.svg`
+export const LoginSvgEye = styled.svg`
   stroke: var(--secondary);
   fill: none;
   display: inline-block;

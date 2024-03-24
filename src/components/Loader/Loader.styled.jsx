@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const LoaderStyled = styled.div`
+export const MainLoader = styled.div`
   position: fixed;
   z-index: 1000;
   top: 0;

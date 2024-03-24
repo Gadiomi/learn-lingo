@@ -2,12 +2,12 @@ import styled from '@emotion/styled';
 
 import { Link } from 'react-router-dom';
 
-export const HomeConteier = styled.div`
+export const HomePageConteier = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: 0px 16px;
   width: 320px;
-  padding-bottom:16px;
+  padding-bottom: 16px;
 
   @media screen and (min-width: 320px) {
     width: 100%;
@@ -15,14 +15,13 @@ export const HomeConteier = styled.div`
 
   @media screen and (min-width: 768px) {
     padding: 0px 32px;
-    padding-bottom:32px;
+    padding-bottom: 32px;
   }
 
   @media screen and (min-width: 1280px) {
     max-width: 1400px;
     padding: 0px 64px;
-        padding-bottom:32px;
-    
+    padding-bottom: 32px;
   }
 `;
 
@@ -33,7 +32,6 @@ export const Container = styled.div`
   align-items: stretch;
   gap: 24px;
   margin-bottom: 24px;
-  /* width: 100%; */
 
   @media screen and (min-width: 320px) {
   }
@@ -46,7 +44,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Title = styled.h1`
+export const HomeTitle = styled.h1`
   @media (min-width: 768px) {
     font-size: 36px;
   }
@@ -67,7 +65,7 @@ export const Title = styled.h1`
   margin: 0px;
   margin-bottom: 32px;
 `;
-export const Text = styled.span`
+export const HomeText = styled.span`
   font-style: italic;
   font-weight: 400;
   line-height: 56px;
@@ -88,24 +86,19 @@ export const Text = styled.span`
       : 'var(--hoverCecondary-text-color)'};
 `;
 
-export const Blockconteiner = styled.div`
+export const HomeBlockconteiner = styled.div`
   background-color: var(--secondary-white);
   border-radius: 30px;
   max-width: 735px;
 
   padding: 24px 16px;
-  /* @media screen and (min-width: 768px) {
-        @media screen and (max-width: 1279px) {
-               max-width: 490px;
-        }
-              } */
   @media screen and (min-width: 1280px) {
     padding: 98px 20px 98px 64px;
     width: 720px;
   }
 `;
 
-export const Img = styled.img`
+export const HomeImg = styled.img`
   width: 300px;
   height: 350px;
   @media screen and (min-width: 1280px) {
@@ -113,7 +106,8 @@ export const Img = styled.img`
     height: 530px;
   }
 `;
-export const Descreption = styled.p`
+
+export const HomeDescreption = styled.p`
   @media (min-width: 1280px) {
     width: 471px;
     margin-bottom: 64px;
@@ -126,7 +120,7 @@ export const Descreption = styled.p`
   line-height: 1.37;
   letter-spacing: -0.32px;
 `;
-export const GetStartedBtn = styled(Link)`
+export const HomeStartedBtn = styled(Link)`
   display: block;
   text-align: center;
   border: none;
@@ -173,7 +167,7 @@ export const GetStartedBtn = styled(Link)`
   }
 `;
 
-export const StyledList = styled.ul`
+export const HomeList = styled.ul`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -204,38 +198,34 @@ export const StyledList = styled.ul`
 
   @media screen and (min-width: 768px) {
   }
-  /* 
-  @media screen and (max-width: 1280px) {
-    max-width: 819px;
 
-  } */
   @media screen and (min-width: 1280px) {
     gap: 100px;
     padding: 40px 0;
   }
 `;
 
-export const StyledItem = styled.li`
+export const HomeItem = styled.li`
   display: flex;
   flex-direction: row;
   gap: 16px;
 `;
 
-export const StyledCount = styled.span`
+export const HomeCount = styled.span`
   font-size: 28px;
   line-height: 1.14;
   font-weight: 500;
   letter-spacing: -0.56px;
 `;
 
-export const StyledDescription = styled.span`
+export const HomeDescription = styled.span`
   width: 74px;
   font-size: 14px;
   line-height: 1.3;
   letter-spacing: -0.28px;
 `;
 
-export const ContainerPhoto = styled.div`
+export const HomeContainerPhoto = styled.div`
   background-color: ${({ color }) =>
     color === 'Blue'
       ? 'var(--colorBlue)'
@@ -275,7 +265,7 @@ export const ContainerPhoto = styled.div`
   }
 `;
 
-export const ContainerMac = styled.div`
+export const HomeContainerMac = styled.div`
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   background-image: ${({ color }) =>

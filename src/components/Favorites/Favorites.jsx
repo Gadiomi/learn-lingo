@@ -1,4 +1,10 @@
-import { TeachersStyled, Container, Text, Containerd,Containerdf} from '../Teachers/Teachers.styled';
+import {
+  TeachersList,
+  Container,
+  Text,
+  Containerd,
+  Containerdf,
+} from '../Teachers/Teachers.styled';
 import {
   selectTeachersFavorites,
   selectFilterFavoritesTeachers,
@@ -23,7 +29,7 @@ function Favorites({ color }) {
             setLevel={setLevel}
             Teachers={Techers}
           />
-          <TeachersStyled>
+          <TeachersList>
             {filterArr &&
               filterArr?.map((el) => (
                 <TeacherCard
@@ -33,17 +39,24 @@ function Favorites({ color }) {
                   Level={Level}
                 />
               ))}
-            {filterArr.length === 0 ? <Containerd><p>Teacher not faund</p> </Containerd> : undefined}
-          </TeachersStyled>
+            {filterArr.length === 0 ? (
+              <Containerd>
+                <p>Teacher not faund</p>{' '}
+              </Containerd>
+            ) : undefined}
+          </TeachersList>
         </Container>
       ) : (
         <>
           {Techers.length === 0 ? (
-                          <Container>
-       <Containerdf>   <Text>
-                It appears that you haven't added any teachers to your favorites
-                yet.
-              </Text></Containerdf>
+            <Container>
+              <Containerdf>
+                {' '}
+                <Text>
+                  It appears that you have not added any teachers to your
+                  favorites yet.
+                </Text>
+              </Containerdf>
             </Container>
           ) : (
             <Container>
@@ -53,12 +66,12 @@ function Favorites({ color }) {
                 setLevel={setLevel}
                 Teachers={Techers}
               />
-              <TeachersStyled>
+              <TeachersList>
                 {Techers &&
                   Techers?.map((el) => (
                     <TeacherCard key={nanoid()} color={color} teacher={el} />
                   ))}
-              </TeachersStyled>
+              </TeachersList>
             </Container>
           )}
         </>

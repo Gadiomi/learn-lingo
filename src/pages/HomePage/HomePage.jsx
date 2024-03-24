@@ -1,68 +1,68 @@
 import {
   Container,
-  Blockconteiner,
-  Title,
-  Descreption,
-  GetStartedBtn,
-  Text,
-  StyledList,
-  StyledItem,
-  StyledCount,
-  StyledDescription,
-  HomeConteier,
-  ContainerPhoto,
-  ContainerMac,
+  HomeBlockconteiner,
+  HomeTitle,
+  HomeDescreption,
+  HomeStartedBtn,
+  HomeText,
+  HomeList,
+  HomeItem,
+  HomeCount,
+  HomeDescription,
+  HomePageConteier,
+  HomeContainerPhoto,
+  HomeContainerMac,
 } from './HomePage.styled';
 import hero from '../../assets/hero2.webp';
 import sprite from '../../assets/sprite.svg';
 const Home = ({ color }) => {
   return (
-    <HomeConteier>
+    <HomePageConteier>
       <Container>
-        <Blockconteiner>
-          <Title>
+        <HomeBlockconteiner>
+          <HomeTitle>
             Unlock your potential with the best{' '}
-            <Text color={color}>language</Text> tutors
-          </Title>
-          <Descreption>
+            <HomeText color={color}>language</HomeText> tutors
+          </HomeTitle>
+          <HomeDescreption>
             Embark on an Exciting Language Journey with Expert Language Tutors:
             Elevate your language proficiency to new heights by connecting with
             highly qualified and experienced tutors.
-          </Descreption>
-          <GetStartedBtn to="/Teachers" color={color}>
+          </HomeDescreption>
+          <HomeStartedBtn to="/Teachers" color={color}>
             Get started
-          </GetStartedBtn>
-        </Blockconteiner>
-        <ContainerPhoto color={color}>
+          </HomeStartedBtn>
+        </HomeBlockconteiner>
+        <HomeContainerPhoto color={color}>
           <img src={hero} alt="" />
-          <ContainerMac color={color}>
+          <HomeContainerMac color={color}>
             <svg>
               <use href={sprite + '#icon-apple'}></use>
             </svg>
-          </ContainerMac>
-        </ContainerPhoto>
+          </HomeContainerMac>
+        </HomeContainerPhoto>
       </Container>
       <footer>
-        <StyledList color={color}>
-          <StyledItem>
-            <StyledCount>32,000 +</StyledCount>
-            <StyledDescription>Experienced tutors</StyledDescription>
-          </StyledItem>
-          <StyledItem>
-            <StyledCount>300,000 +</StyledCount>
-            <StyledDescription>5-star tutor reviews</StyledDescription>
-          </StyledItem>
-          <StyledItem>
-            <StyledCount>120 +</StyledCount>
-            <StyledDescription>Subjects taught</StyledDescription>
-          </StyledItem>
-          <StyledItem>
-            <StyledCount>200 +</StyledCount>
-            <StyledDescription>Tutor nationalities</StyledDescription>
-          </StyledItem>
-        </StyledList>
+        <HomeList color={color}>
+          <HomeItem>
+            <HomeCount>32,000 +</HomeCount>
+            <HomeDescription>Experienced tutors</HomeDescription>
+          </HomeItem>
+          <HomeItem>
+            <HomeCount>300,000 +</HomeCount>
+            <HomeDescription>5-star tutor reviews</HomeDescription>
+          </HomeItem>
+          <HomeItem>
+            <HomeCount>120 +</HomeCount>
+            <HomeDescription>Subjects taught</HomeDescription>
+          </HomeItem>
+          <HomeItem>
+            <HomeCount>200 +</HomeCount>
+            <HomeDescription>Tutor nationalities</HomeDescription>
+          </HomeItem>
+        </HomeList>
       </footer>
-    </HomeConteier>
+    </HomePageConteier>
   );
 };
 

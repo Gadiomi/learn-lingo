@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { TeachersStyled, Button, Container,Containerd } from './Teachers.styled';
+import { TeachersList, Button, Container, Containerd } from './Teachers.styled';
 import TeacherCard from 'components/TeacherCard/TeacherCard';
 import { nanoid } from 'nanoid';
 import TeachersFilter from '../TeachersFilter/TeachersFilter';
@@ -38,7 +38,7 @@ function Teachers({ color }) {
           Teachers={teachers}
         />
         {filterArr ? (
-          <TeachersStyled>
+          <TeachersList>
             {filterArr &&
               filterArr?.map((el) => (
                 <TeacherCard
@@ -48,16 +48,21 @@ function Teachers({ color }) {
                   Level={Level}
                 />
               ))}
-            {filterArr.length === 0 ? <Containerd> <p>Teacher not faund</p>  </Containerd> : undefined}
-          </TeachersStyled>
+            {filterArr.length === 0 ? (
+              <Containerd>
+                {' '}
+                <p>Teacher not faund</p>{' '}
+              </Containerd>
+            ) : undefined}
+          </TeachersList>
         ) : (
           <>
-            <TeachersStyled>
+            <TeachersList>
               {teachers &&
                 teachers?.map((el) => (
                   <TeacherCard key={nanoid()} color={color} teacher={el} />
                 ))}
-            </TeachersStyled>
+            </TeachersList>
             {teachers?.length > limit &&
               (isLoading ? (
                 <ThreeDots

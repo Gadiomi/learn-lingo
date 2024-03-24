@@ -1,13 +1,13 @@
 import styled from '@emotion/styled';
 
-export const TeachersStyled = styled.ul`
+export const TeachersList = styled.ul`
   margin-top: 32px;
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 32px;
   margin-bottom: 65px;
-      min-height: 430px;
+  min-height: 430px;
 `;
 
 export const Button = styled.button`
@@ -99,9 +99,8 @@ export const Text = styled.p`
 `;
 
 export const Containerd = styled.div`
-    min-height: calc(100vh - 391px);
-`
+  min-height: calc(100vh - 391px);
+`;
 export const Containerdf = styled.div`
-    min-height: calc(100vh - 220px);
-`
-
+  min-height: calc(100vh - 220px);
+`;

@@ -1,14 +1,14 @@
-import { LoaderContainer, LoaderStyled } from './Loader.styled';
+import { LoaderContainer, MainLoader } from './Loader.styled';
 
 export const Loader = ({ color }) => {
   return (
-    <LoaderStyled color={color}>
+    <MainLoader color={color}>
       <LoaderContainer>
         <div className="lds-ripple">
           <div></div>
           <div></div>
         </div>
       </LoaderContainer>
-    </LoaderStyled>
+    </MainLoader>
   );
 };

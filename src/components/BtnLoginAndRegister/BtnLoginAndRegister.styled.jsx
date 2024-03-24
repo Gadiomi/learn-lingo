@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const AuthNavConteiner = styled.div`
+export const NavigationConteiner = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +37,7 @@ export const LinkLogin = styled(Link)`
         : 'var(--cecondary-text-color)'};
   }
 `;
-export const LinkRegister = styled.button`
+export const BtnRegister = styled.button`
   color: var(--background);
   font-size: 16px;
   font-style: normal;
@@ -65,7 +65,7 @@ export const LinkRegister = styled.button`
         : 'var(--cecondary-text-color)'};
   }
 `;
-export const LoginLogo = styled.svg`
+export const Logo = styled.svg`
   stroke: ${({ color }) =>
     color === 'Blue'
       ? 'var(--colorBlue)'
