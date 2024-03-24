@@ -1,9 +1,9 @@
-import{n,L as d,j as i,s as o}from"./index-f2064006.js";const x=n.div`
+import{n,L as d,j as i,s as o}from"./index-e8c8f30d.js";const x=n.div`
   margin-left: auto;
   margin-right: auto;
   padding: 0px 16px;
   width: 320px;
-  padding-bottom:16px;
+  padding-bottom: 16px;
 
   @media screen and (min-width: 320px) {
     width: 100%;
@@ -11,14 +11,13 @@ import{n,L as d,j as i,s as o}from"./index-f2064006.js";const x=n.div`
 
   @media screen and (min-width: 768px) {
     padding: 0px 32px;
-    padding-bottom:32px;
+    padding-bottom: 32px;
   }
 
   @media screen and (min-width: 1280px) {
     max-width: 1400px;
     padding: 0px 64px;
-        padding-bottom:32px;
-    
+    padding-bottom: 32px;
   }
 `,p=n.div`
   display: flex;
@@ -27,7 +26,6 @@ import{n,L as d,j as i,s as o}from"./index-f2064006.js";const x=n.div`
   align-items: stretch;
   gap: 24px;
   margin-bottom: 24px;
-  /* width: 100%; */
 
   @media screen and (min-width: 320px) {
   }
@@ -72,11 +70,6 @@ import{n,L as d,j as i,s as o}from"./index-f2064006.js";const x=n.div`
   max-width: 735px;
 
   padding: 24px 16px;
-  /* @media screen and (min-width: 768px) {
-        @media screen and (max-width: 1279px) {
-               max-width: 490px;
-        }
-              } */
   @media screen and (min-width: 1280px) {
     padding: 98px 20px 98px 64px;
     width: 720px;
@@ -143,11 +136,7 @@ import{n,L as d,j as i,s as o}from"./index-f2064006.js";const x=n.div`
 
   @media screen and (min-width: 768px) {
   }
-  /* 
-  @media screen and (max-width: 1280px) {
-    max-width: 819px;
 
-  } */
   @media screen and (min-width: 1280px) {
     gap: 100px;
     padding: 40px 0;
@@ -217,4 +206,4 @@ import{n,L as d,j as i,s as o}from"./index-f2064006.js";const x=n.div`
     height: 56px;
     fill: ${({color:e})=>e==="Blue"?"var(--colorBlue)":e==="Green"?"var(--colorGreen)":e==="Orange"?"var(--colorYellow)":e==="Pink"?"var(--colorPink)":e==="LightPink"?"var(--colorCoral)":"var(--cecondary-text-color)"};
   }
-`,u="/learn-lingo/assets/hero2-726776c9.webp",y=({color:e})=>i.jsxs(x,{children:[i.jsxs(p,{children:[i.jsxs(l,{children:[i.jsxs(s,{children:["Unlock your potential with the best"," ",i.jsx(h,{color:e,children:"language"})," tutors"]}),i.jsx(c,{children:"Embark on an Exciting Language Journey with Expert Language Tutors: Elevate your language proficiency to new heights by connecting with highly qualified and experienced tutors."}),i.jsx(g,{to:"/Teachers",color:e,children:"Get started"})]}),i.jsxs(w,{color:e,children:[i.jsx("img",{src:u,alt:""}),i.jsx(v,{color:e,children:i.jsx("svg",{children:i.jsx("use",{href:o+"#icon-apple"})})})]})]}),i.jsx("footer",{children:i.jsxs(m,{color:e,children:[i.jsxs(r,{children:[i.jsx(t,{children:"32,000 +"}),i.jsx(a,{children:"Experienced tutors"})]}),i.jsxs(r,{children:[i.jsx(t,{children:"300,000 +"}),i.jsx(a,{children:"5-star tutor reviews"})]}),i.jsxs(r,{children:[i.jsx(t,{children:"120 +"}),i.jsx(a,{children:"Subjects taught"})]}),i.jsxs(r,{children:[i.jsx(t,{children:"200 +"}),i.jsx(a,{children:"Tutor nationalities"})]})]})})]});export{y as default};
+`,u="/learn-lingo/assets/hero2-726776c9.webp",j=({color:e})=>i.jsxs(x,{children:[i.jsxs(p,{children:[i.jsxs(l,{children:[i.jsxs(s,{children:["Unlock your potential with the best"," ",i.jsx(h,{color:e,children:"language"})," tutors"]}),i.jsx(c,{children:"Embark on an Exciting Language Journey with Expert Language Tutors: Elevate your language proficiency to new heights by connecting with highly qualified and experienced tutors."}),i.jsx(g,{to:"/Teachers",color:e,children:"Get started"})]}),i.jsxs(w,{color:e,children:[i.jsx("img",{src:u,alt:""}),i.jsx(v,{color:e,children:i.jsx("svg",{children:i.jsx("use",{href:o+"#icon-apple"})})})]})]}),i.jsx("footer",{children:i.jsxs(m,{color:e,children:[i.jsxs(r,{children:[i.jsx(t,{children:"32,000 +"}),i.jsx(a,{children:"Experienced tutors"})]}),i.jsxs(r,{children:[i.jsx(t,{children:"300,000 +"}),i.jsx(a,{children:"5-star tutor reviews"})]}),i.jsxs(r,{children:[i.jsx(t,{children:"120 +"}),i.jsx(a,{children:"Subjects taught"})]}),i.jsxs(r,{children:[i.jsx(t,{children:"200 +"}),i.jsx(a,{children:"Tutor nationalities"})]})]})})]});export{j as default};
